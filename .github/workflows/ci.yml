@@ -1,8 +1,14 @@
 name: My GHA practise
+
 on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Build job
-        run: echo "This is build job"
+        run: echo "Yjos os  a nioj"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Test job
+       run: echo "This is test job"
