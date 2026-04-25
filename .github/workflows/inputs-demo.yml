@@ -11,13 +11,16 @@ on:
           - test
           - prod
         type: choice
+      artifact_tag:
+        description: Choose the git tag to deploy
+        required: true
 
 jobs: 
       job1:
         runs-on: ubuntu-latest
         steps:
           - name: Print the value
-            run: echo "Environment selected is ${{ inputs.environment }}"
+            run: echo "Environment selected is ${{ inputs.environment }} & artifact tag is ${{ inputs.artifact_tag}}"
           
 
           
