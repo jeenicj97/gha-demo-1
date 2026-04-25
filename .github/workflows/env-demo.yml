@@ -5,12 +5,12 @@ env:
 jobs:
   env_demo:
     runs-on: ubuntu-latest
-    #env:
-      #APP_ENV: "test"
+    env:
+      APP_ENV: "test"
     steps:
      - name: Connecting to Env
-       #env:
-         #APP_ENV: "deploy"
+       env:
+         APP_ENV: "deploy"
        run: echo "App is connecting to $APP_ENV"
        
     
