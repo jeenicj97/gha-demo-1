@@ -14,7 +14,7 @@ jobs:
           aws-region: us-east-1
       - name: Copy static code to s3
         run: |
-          aws s3 sync ./ s3://jjc-gha-statis-website-demo/ \
+          aws s3 sync ./ s3://jjc-gha-static-website-demo/ \
           --exclude "*" \
           --include "index.html"
         
