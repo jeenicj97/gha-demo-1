@@ -1,0 +1,9 @@
+  name: If Or Demo
+  on: push
+  jobs:
+    job1:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run for Jeeni or Jeenicj97
+          if: github.actor == 'Jeeni' || github.actor == 'jeenicj97'
+          run: echo "It is triggered by Jeeni or Jeenicj97"
