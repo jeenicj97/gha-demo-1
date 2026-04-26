@@ -1,4 +1,4 @@
- name: Outputs Demo
+ name: Outputs Demo Steps
  on: push
  jobs:
    Build:
